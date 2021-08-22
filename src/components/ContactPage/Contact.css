@@ -35,7 +35,7 @@
 .contactInfo {
     position: absolute;
     top: 40px;
-    width: 30%;
+    width: 20%;
     height: calc(100% - 80px);
     background-color: #16384c;
     z-index: 1;
@@ -67,7 +67,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 /* #email{
@@ -101,10 +100,7 @@
 .ContactMe .box .contactInfo .sci li{
     list-style: none;
 }
-/* 
-.ContactMe .box .contactInfo .sci li:hover a img{
-    color: cornflowerblue;
-} */
+
 .contactForm{
     position: absolute;
     padding: 70px 50px;
