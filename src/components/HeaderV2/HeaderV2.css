@@ -1,0 +1,172 @@
+
+#logo {
+    margin: 10px 10px;
+    margin: auto;
+    min-width: 70px;
+    min-height: 70px;
+    object-fit: cover;
+}
+
+#logo{
+    /* background-color: #49526b; */
+    padding: 3px 3px;
+}
+
+nav {
+
+    /*How come my nav bar doesn't stick*/
+    top: 0;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    /* background-color: #49526b; */
+    font-family: 'Fira Sans', sans-serif;
+    /* position: fixed; 
+    left: 5%;
+    top: 0;
+    width: 95%;  */
+}
+
+#header {
+    display: flex;
+    justify-content: space-between  ;
+    color: #f1edee;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.nav-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-around 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f1edee;
+    font-size: 14px;
+
+}
+
+.nav-links li {
+    list-style: none;
+    font-weight: bold;
+}
+
+/* Hover effect */
+a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #303542;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+a:hover::before {
+    width: 100%;
+
+}
+
+/* The following is for mobile */
+
+/* Not exactly sure why this works*/
+.mobile div {
+    width: 25px;
+    height: 2px;
+    background-color: #f1edee;
+    margin: 5px;
+
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+/* This is the issue*/
+
+@media screen and (max-width: 760px) {
+
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    nav{
+        display: flex !important;
+        justify-content: flex-end !important;
+        padding-right: 10px !important;
+    }
+
+    .nav-links {
+        position: absolute;
+        /* right: 0px; */
+        display: none;
+        height: 100%;
+        top: 7.9vh;
+        opacity: 0.8;
+        /* background-color: #525b72; */
+        color: #f1edee;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        transition: transform .5s, opacity 3s;
+
+    }
+
+    
+    .nav-links.nav-active li{
+
+        opacity: 0;
+    }
+
+    .nav-links.nav-deactivate li{
+        opacity: 1;
+    }
+
+    .mobile {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-deactivate {
+        display: none;
+    }
+}
+
+
+@keyframes navLinkFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinkFadeOut{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(50px);
+    } 
+}
+
+

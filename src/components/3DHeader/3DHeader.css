@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+Canvas {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  background: white;
+  position: relative;
+}
+
+
+span.header {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  display: inline-block;
+  width: 500px;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+  left: 2em;
+  font-size: 8em;
+  line-height: 1em;
+}
+
+.navbar{
+  /* I position these with absolute, how do I make them change dynamically */
+  position: absolute; 
+  top: 2vh;
+  width: 100vw;
+}
+
+@media all and (max-width: 1000px){
+
+  /* Canvas{
+       display: none !important;
+  } */
+
+  span.header{
+    position: absolute !important;
+    top: 50vh !important;
+    padding-left: 3vw;
+    left: -0.005px !important;;
+    /* width: 100vw !important; */
+  }
+
+
+  .ThreeHeader{
+      width: 100vw ;
+      height: 100vh ;
+      background-color: #7B9EA8 ;
+      display: flex ;
+      justify-content: center ;
+      align-items: center ;
+  }
+}
+
+@media all and (max-width: 500px){
+  span.header{
+    width: 100vw;
+    position: absolute !important;
+    top: 50vh !important;
+    padding: 3vw;
+    left: -0.005px !important;
+    font-size: 5em !important;
+  }
+}

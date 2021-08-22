@@ -1,0 +1,32 @@
+
+.langugage{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Logo{
+    width: 80px;
+    height: 80px;
+    padding-left: 15px;
+
+}
+
+.frameworks{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.Skills{
+    padding-bottom: 100px;
+}
+
+@media all and (max-width: 1200px){
+    .Skills{
+        display: none;
+    }
+}

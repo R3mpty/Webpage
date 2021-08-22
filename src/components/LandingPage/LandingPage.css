@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.name {
+    padding: 10px 10px;
+    height: 92vh;
+    background-color: #2f3547;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: flex-start;
+    opacity: 0;
+    animation: HeroAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.welcome{
+    top: -375px;
+    position: relative;
+}
+
+
+.aboutMe {
+    position: relative;
+    /* max-height: 1500px; */
+}
+/* 
+svg{
+    animation: fill 0.5s ease forwards 3.5s;
+} */
+
+.welcome path:nth-child(2) {
+    stroke-dasharray: 600px;
+    stroke-dashoffset: 600px;
+    animation: line-animation 2s ease forwards;
+}
+
+.CartoonMe #hand{
+    /* transform: scale(0.7); */
+    animation: rotation 2s ease-in-out infinite alternate;
+    transform-origin: 60px 140px;
+}
+
+/* #hair{
+    transform: translateY(-2px);
+} */
+
+@keyframes rotation {
+    from {
+            -webkit-transform: rotate(-10deg);
+    }
+    to {
+            -webkit-transform: rotate(10deg);
+    }
+}
+
+/* @keyframes wave {
+    transform{} 
+} */
+
+
+
+/* 
+svg path:nth-child(3) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(4) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(5) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(6) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(7) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(8) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(9) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(10) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(11) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(12) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(13) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(14) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(15) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(16) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(17) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(18) {
+    stroke-dasharray: 30px;
+}
+
+svg path:nth-child(19) {
+    stroke-dasharray: 30px;
+}
+ */
+
+
+
+/* self defined animation */
+@keyframes HeroAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.waves{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+@keyframes line-animation {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.CartoonMe{
+    left: 110px;
+    bottom: 0;
+    position: relative;
+}
+
+/* The fill doesn't work */
+/* @keyframes fill {
+    from{
+        fill: #000;
+    }
+    to{
+        fill: white;
+    }
+} */
+
+

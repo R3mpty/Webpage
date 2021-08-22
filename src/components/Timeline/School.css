@@ -1,0 +1,52 @@
+:root{
+    --display: none;
+}
+
+.school{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+
+.leftSide {
+    width: 30%;    
+}
+
+.rightSide{
+    width: 70%;
+    margin-left: 20px;
+}
+
+#pin{
+    margin-top: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+#pin:hover{
+    animation: shake .1s ease-in-out infinite alternate;
+    /* z-index: 100px; */
+}
+
+@keyframes shake {
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg); 
+    }
+}
+
+/* Iframe{
+    display: --display !important;
+} */
+
+
+
+.location{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
