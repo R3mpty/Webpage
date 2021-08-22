@@ -41,8 +41,7 @@ function AboutMe(){
                         <Link className = "specialButton" to = "/components/Timeline/Timeline"> Timeline </Link>
                     </div>
 
-                    <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, deserunt sint. In cum possimus laborum ab. Nam earum ducimus facilis nobis ipsum aspernatur nulla repudiandae enim vitae. Nisi, quisquam aut?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, excepturi nulla quae iste hic obcaecati quos similique reiciendis illum nisi inventore nostrum officiis, consequuntur iusto ullam ipsam quas deleniti incidunt.
+                    <Text>Welcome to my website, I’m a software developer who focuses on machine learning and 3D animations. Scroll down to see some of the projects I haven done or click the timeline button above for a list of my education.
                     </Text>
                 
                     <Skills />
